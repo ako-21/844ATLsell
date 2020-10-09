@@ -1,1 +1,76 @@
+
+
+
+$theme-colors: (
+  'charc': #0000001A,
+  'blanc': #fff,
+  'secondary': #fcba08
+);
+
+body {
+  background-attachment: fixed;
+  background-image: url('./images/background.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.autocomplete-input {
+  outline: none;
+  border-width: 0;
+  border-image: none;
+  border-style: none;
+  height: 100%;
+  width: 100%;
+  margin-bottom: 2%;
+}
+
+.logo {
+  padding-top: 2%;
+  width: 20%;
+}
+
+.header-border {
+  border-bottom-color: #f7f7f7;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+}
+
+.header-font {
+  font-family: 'Merriweather Sans', sans-serif;
+  &:hover {
+    border-bottom-style: solid;
+    border-bottom-color: #f7f7f7;
+    border-bottom-width: 10px;
+    font-weight: bold;
+    color: #2f4f4f;
+  }
+}
+
+.home-heading {
+  color: #fff;
+  text-shadow: 2px 4px 10px #000000;
+  margin-top: 16rem
+}
+
+.home-card {
+  margin-bottom: 20%;
+}
+
+.robot {
+  animation: rotation 6s infinite linear;
+  height: auto;
+  width: 2rem;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+
 @import '~bootstrap/scss/bootstrap';
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=Merriweather+Sans&family=Oswald:wght@600&display=swap');
